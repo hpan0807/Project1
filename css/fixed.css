@@ -1,0 +1,251 @@
+/* You may set the width and height of container/section elements in percentages. 
+DO NOT USE PERCENTAGES IN TEXTS AND IMAGES : No responsiveness  */
+
+body {
+	background: white;
+}
+
+#container {
+	width: 1366px;
+	height: 768px;
+	position: relative;
+	left: 50%;
+	margin-left: -680px;
+}
+
+.section {
+	width: 1366px;
+	height: 768px;
+}
+
+#first {
+	background: rgb(209,211,223);
+}
+
+#logo{
+	position:absolute;
+	width:190.1px;
+	height:190px;
+	margin-left:1150px;
+	margin-top:30px;
+	z-index: 1;
+}
+
+
+p {
+	font-family: Helvetica;
+	font-size: 6em;
+	position:absolute;
+
+}
+
+.passionconnected{
+	color: rgb(0, 143, 205);
+	font-weight: bold;
+	font-size:6.5em;
+	z-index: 1;
+}
+
+@keyframes move_left_one{
+	0% { left:1600px; }
+	100% { left:150px; }
+}
+
+#passion {
+	left: 150px;
+	top: 345px;
+	animation: move_left_one 1s ease-out;
+}
+
+@keyframes move_left_two{
+	0% { left:1650px; }
+	100% { left:200px; }
+}
+#connected {
+	left: 200px;
+	top: 444px;
+	animation: move_left_two 1s ease-out;
+}
+
+.pyeongchang{
+	color:rgb(229,55,97);
+	font-weight: bold;
+	font-size:6.5em;
+	z-index: 1;
+}
+
+@keyframes move_right_one{
+	0% { right:1600px; }
+	100% { right:252px; }
+}
+
+#pyeong {
+	right: 252px;
+	top: 145px;
+	animation: move_right_one 1s ease-out;
+}
+@keyframes move_right_two{
+	0% { right:1548px; }
+	100% { right:200px; }
+}
+
+#chang {
+	right: 200px;
+	top: 244px;
+	animation: move_right_two 1s ease-out;
+}
+
+@keyframes appear{
+	0% { opacity:0; }
+	100% { opacity:1; }
+}
+
+#subtitle{
+	font-size: 2.2em;
+	font-weight: bold;
+	margin-left:220px;
+	margin-top:105px;
+	line-height:1.3;
+	z-index:1;
+	font-color: #313630;
+	opacity:0;
+	animation: appear 1s linear;
+	animation-delay: 2s;
+    animation-fill-mode: forwards
+}
+
+#subtitle2{
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-left:915px;
+	margin-top:405px;
+	z-index:1;
+	font-color: #313630;
+	opacity:0;
+	animation: appear 1s linear;
+	animation-delay: 2s;
+    animation-fill-mode: forwards
+}
+
+#websitelink{
+	font-size: 0.75em;
+	font-weight: bold;
+	margin-left:93px;
+	margin-top:682px;
+	z-index:1;
+	font-color: #313630;
+	opacity:0;
+	animation: appear 1s linear;
+	animation-delay: 2s;
+    animation-fill-mode: forwards
+}
+
+#websitelink em{
+	color:rgb(229,55,97);
+	font-style: normal;
+}
+
+#desc{
+	width:590px;
+	font-family: Georgia;
+	position:absolute;
+	font-color: #313630;
+	margin-top: 597px;
+	margin-left:93px;
+	font-weight:normal;
+	column-count: 2;
+	font-size:0.75em;
+	line-height: 1.7;
+	opacity:0;
+	animation: appear 1s linear;
+	animation-delay: 2s;
+    animation-fill-mode: forwards
+}
+
+.description2{
+	font-family: Georgia;
+	width:285px;
+	margin-left:930px;
+	position:absolute;
+	font-size:0.75em;
+	line-height: 1.7;
+	font-weight:normal;
+
+}
+
+#desc2{
+	margin-top: 430px;
+	opacity:0;
+	animation: appear 1s linear;
+	animation-delay: 2s;
+    animation-fill-mode: forwards
+}
+
+#desc3{
+	margin-top: 560px;
+	opacity:0;
+	animation: appear 1s linear;
+	animation-delay: 2s;
+    animation-fill-mode: forwards
+}
+
+
+.line{
+    position: absolute;
+    border-bottom: 0.5px solid rgb(0, 143, 205);
+	transform: rotate(33deg);
+    transform-origin: 0% 0%;  
+    z-index:0;
+
+}
+
+@keyframes expand_line_one{
+	0% { width:0px; }
+	100% { width:1100px; }
+}
+
+#line1{
+	margin-left:200px;
+    margin-top:81px;
+    width: 0px;
+    animation: expand_line_one 1s cubic-bezier(.89,.01,.15,1);
+    animation-delay: 1s;
+    animation-fill-mode: forwards
+
+}
+
+@keyframes expand_line_two{
+	0% { width:0px; }
+	100% { width:310px; }
+}
+
+#line2{
+	margin-left:120px;
+    margin-top:513px;
+    width: 0px;
+    animation: expand_line_two 1s cubic-bezier(.89,.01,.15,1);
+    animation-delay: 1s;
+    animation-fill-mode: forwards
+}
+
+
+#line3{
+	margin-left:970px;
+    margin-top:95px;
+    width: 0px;
+    animation: expand_line_two 1s cubic-bezier(.89,.01,.15,1);
+    animation-delay: 1s;
+    animation-fill-mode: forwards
+}
+@keyframes bg_fade{
+	0% { opacity: 1; }
+	100% { opacity: 0.1; }
+}
+
+
+#bg{
+	width: 1366px;
+	opacity:0.1;
+	animation: bg_fade 2s cubic-bezier(.7,.01,.15,1);
+	z-index:-1;
+}
