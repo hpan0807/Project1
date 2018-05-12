@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+		
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="website.css" />
+
+		
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/data.js"></script>
+		<script type="text/javascript" src="js/slideshow.js"></script>
+		<script type="text/javascript" src="js/jquery.slides.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+		<title>ELMHURST ART MUSEUM</title>
+        
+	   <script type="text/javascript" src="js/readmore.js"></script>
+	</head>
+
+	<body>
+
+		<div id="container2">
+            
+            <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a>About</a>
+              <a>Visit</a>
+              <a onclick="location.href='website.html'">Exhibitions</a>
+                <a onclick="location.href='support.html'">Support</a>
+            </div>
+            
+            <div id="bg_grey" onclick="closeNav()"></div>
+
+			<div id="navigation_Div">
+                
+                <div id= "menu_Div" onclick="openNav()">
+                        <img id="menuIcon" src="images/MenuIcon_White.png"/>
+                </div>
+                
+				<div id= "logo_Div" onclick="location.href='website.html'">
+                    <div id="logo">
+                    </div>
+					
+				</div>
+                <div id="search_Div">
+                    <img id="searchIcon" src="images/SearchIcon_White.png"/>
+                </div>
+				
+			</div>
+
+			<div id="main_Div">
+                <div id="slides">
+<!--
+                    This will be added by $(document).ready in slideshow.js
+                    <div class="panel" >
+                        <img class="panelimg" src="images/MainPage/Elmhurst1.jpg">
+                    </div>
+-->                    
+                </div>
+                
+                <div id="GoBack_btn_Div">
+                    <div class="GoBack_btn_text" onclick="location.href='website.html'">
+                        <img class="back_symbol" src="images/GoBack_btn_img.png"/>
+                        <p class="back_text">GO BACK</p>
+                    </div>
+                </div>
+                
+                <div id="panelName">
+                    Fred Moss "Water Lillies"
+                </div>
+                
+                <div id="content">
+                    <div id="content_title">
+                        <p id="content_title_p">The Elmhurst Artists' Guild Spring Member's Show</p>
+                    </div>
+                    <div id="white_bg">
+                        <div id="dates">
+                            <p id="dates_p">MARCH 11 – APRIL 20, 2018
+                            </p>
+                        </div>
+                        <div id="content_description">
+                            <p id="content_description_p">The Elmhurst Artists’ Guild Spring Member’s Show features a variety of work made by regional artists in several media. The breadth of style and media includes watercolor, ceramics, oil, acrylic, digital, collage, photographic and sculptural works. The many emerging artists from the Chicagoland area created landscapes, portraits, abstractions and other styles. The inspiration for each artist is as diverse as the spectrum of media employed. <br><br>This show presents an opportunity to meet the artists and learn first-hand about their work. An added bonus is that all purchases provide support to the artists, Guild, and Elmhurst Art Museum.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+			</div>
+
+
+			<div id="footer_Div">
+                <div id="footer_links2">
+                    <a class = "footer_links_text"href="https://www.facebook.com/elmhurstartmuseum/">FACEBOOK</a><a class = "footer_links_text"href="https://twitter.com/ElmhurstArt">TWITTER</a>
+                </div>
+			</div>
+			
+		
+		</div> <!-- End of container -->
+
+	</body>
+
+
+
+
+</html>
